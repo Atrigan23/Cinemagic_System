@@ -1,0 +1,5 @@
+﻿CREATE TABLE SNACK_SALE
+(
+    Snack_Sale_ID int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+    Snack_SaleDate DATE NOT NULL
+);
