@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Cinemagic;
 
 namespace RandomProj
 {
@@ -39,6 +40,13 @@ namespace RandomProj
             {
                 MessageBox.Show("Could not connect to db");
             }
+        }
+
+        private void btnbook_Click(object sender, EventArgs e)
+        {
+
+            Bookingstbl frm = new Bookingstbl();
+            frm.Show();
         }
     }
 }

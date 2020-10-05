@@ -28,13 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnbook = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnbook
+            // 
+            this.btnbook.Location = new System.Drawing.Point(31, 297);
+            this.btnbook.Name = "btnbook";
+            this.btnbook.Size = new System.Drawing.Size(104, 36);
+            this.btnbook.TabIndex = 1;
+            this.btnbook.Text = "Bookings";
+            this.btnbook.UseVisualStyleBackColor = true;
+            this.btnbook.Click += new System.EventHandler(this.btnbook_Click);
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.btnbook);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Main";
             this.Text = "Main";
             this.Load += new System.EventHandler(this.Main_Load);
@@ -43,5 +56,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnbook;
     }
 }
